@@ -1,0 +1,3 @@
+include ':startupx'
+include ':app'
+rootProject.name = "StartUpX"
