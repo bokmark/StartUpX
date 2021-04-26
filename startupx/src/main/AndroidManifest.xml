@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="zone.bokmark.startupx">
+    <application>
+
+        <provider
+            android:authorities="${applicationId}.androidx-startup"
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false">
+            <meta-data
+                android:name="zone.bokmark.startupx.WrapInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+    </application>
+
 
 </manifest>
